@@ -1,16 +1,54 @@
-# React + Vite
+# MiniGe – React AI Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MiniGe is a mini AI assistant powered by **Google Gemini**.  
+It lets users enter prompts and receive dynamic responses, with styled output and a smooth typing effect.
 
-Currently, two official plugins are available:
+🎓 This project was built while following [this YouTube tutorial](https://www.youtube.com/watch?v=0yboGn8errU&t=2479s), to learn the fundamentals of **React**. This project is based on that tutorial with some personal tweaks & improvements.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
 
-## React Compiler
+- **React**
+- **Google Gemini API**
+- **Context API** (for state management)
+- **Marked.js** (to parse markdown responses)
+- **CSS Grid / Flexbox** (for layout)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Prompt input with Google Gemini API integration
+- Dynamic response display with markdown rendering
+- Word-by-word typing effect for added UX
+- Clean, modern UI layout
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Getting Started – Run the Project Locally
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/yourusername/minige.git
+cd minige
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Add your Gemini API key
+
+Create a file called .env at the root of the project, and add your API key:
+
+```bash
+VITE_GEMINI_API_KEY=your_google_gemini_api_key_here
+```
+
+💡 Don’t have one? You can get a Gemini API key from Google AI Studio
+
+### 4. Start the app
+
+```bash
+npm run dev
+```
+
+Open your browser at http://localhost:5173 and try it out 🚀
